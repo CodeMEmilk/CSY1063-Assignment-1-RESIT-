@@ -1,5 +1,9 @@
 header{
     position:relative;
+    position:sticky; 
+    top: 0;
+    z-index: 10;
+
     border: 2px solid black;
     height:65px;
     width:100%; 
@@ -29,6 +33,25 @@ nav{
     border-top:none;
 }
 
+body{
+    display: flex;                  
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex:1;
+    margin-right: 5%;
+    margin-left: 5%;
+
+    display: grid;
+    grid-row: auto;
+    row-gap: 20px;
+
+    padding-top: 50px;
+    border: 1px solid black;
+}
+
 footer{
     border: 2px solid black;
     height:65px;
@@ -36,3 +59,38 @@ footer{
 
     text-align:center;
 }
+
+.placeholder{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    height: 200px;
+
+    display:flex;
+    align-items:center;
+    border: 2px solid black;
+}
+
+.placeholder-img{
+    margin:2px;
+    width:200px;
+    border: 1px solid black;
+
+    flex-shrink: 0;
+    text-align:center;
+}
+
+.placeholder-details{
+    flex:1;
+    margin:1px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+/* div{
+    margin: 2px;
+    border:2px solid black;
+} */
