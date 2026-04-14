@@ -60,6 +60,8 @@ footer{
     text-align:center;
 }
 
+/* Project placeholder CSS */
+
 .placeholder{
     margin-right: 5%;
     margin-left: 5%;
@@ -87,10 +89,54 @@ footer{
     text-align: center;
 }
 
+/* Contact form CSS */
 
+.contact{
+    margin: 2% 5%;
+    border: 2px solid red;
+}
+ .contact-box{
+    margin: 10px;
+    border: 2px solid blue;
 
+    height:500px;
 
-/* div{
-    margin: 2px;
-    border:2px solid black;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+ }
+
+ .contact-left{
+    display:flex;
+    flex-direction:column;
+    border: 2px solid black;
+
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+
+ }
+
+ .contact-right{
+    display:flex;
+    flex-direction:column;
+    border: 2px solid black;
+
+} 
+
+.contact-divider{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.contact-divider span{
+    width:2px;
+    height: 40px;
+}
+
+/* .form-item{
+    border: 2px solid black;
 } */
+
