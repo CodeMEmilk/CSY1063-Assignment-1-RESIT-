@@ -1,10 +1,12 @@
 <html>
-    <head>
+<head>
     <title>Contact Page</title>
     <link rel="stylesheet" href="portfolio.css">
-    </head>
-    <body>
-    <header> Contact
+</head>
+
+<body>
+    <header>
+        Contact
         <nav>
             <a href="index.html" class="menu-item">Index</a>
             <a href="project.html" class="menu-item">Project</a>
@@ -13,40 +15,44 @@
             <a href="sitereport.html" class="menu-item">Site Report</a>
         </nav>
     </header>
+
     <main>
         <section class="contact">
             <div class="contact-box">
-                <h2></h2>
-                <div class="contact-content">
-                    <div class="contact-left"> Links</div>
-                    <div class="contact-divider">
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="contact-right">
-                        <form>
-                            <div>
-                                <label for="full-name">Full Name:</label>
-                                <input type="text" id="full-name" name="full-name" placeholder="Your Name">
-                            </div>
-                            <div>
-                                <label for ="email">Email:</label>
-                                <input type="email" id ="email" name ="email" placeholder="name@exmple.com">
-                            </div>
-                            <div>
-                                <label for ="message"> Message:</label>
-                                <textarea id="message" name="message" rows="6" placeholder ="Message...."></textarea>
-                            </div>
-                            <div>
-                                <button type="submit">Send</button>
-                            </div>
-                        </form>
-                    </div>
+                <h2>Contact Me</h2>
+
+                <div class="contact-left">
+                    Links
                 </div>
-        <div class="">
-        </div>      
-    </section>
+
+                <div class="contact-divider">
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="contact-right">
+                    <form action="mailto:your.email@example.com" method="get" enctype="text/plain" class="contact-form">
+                        <div class ="form-group">
+                            <label for="full-name">Full Name:</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Your Name">
+                        </div>
+                        <div class ="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="name@example.com">
+                        </div>
+                        <div class ="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Message..."></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer></footer>
-    </body>
+</body>
 </html>
